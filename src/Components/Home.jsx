@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Home.css'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
     const [open, setopen] = useState('')
@@ -55,16 +56,16 @@ export default function Home() {
                                 <button><h1>JOBES</h1></button>
                             </div>
                             <div className='menuitem d-none d-lg-flex'>
-                                <a href="#">Home <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <Link>Home <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                                </svg></span></a>
-                                <a href="#">Find Jobs</a>
-                                <a href="#">Pages <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                </svg></span></Link>
+                                <Link>Find Jobs</Link>
+                                <Link>Pages <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                                </svg></span></a>
-                                <a href="#">Employers</a>
-                                <a href="#">Blog</a>
-                                <a href="#">Contact</a>
+                                </svg></span></Link>
+                                <Link>Employers</Link>
+                                <Link>Blog</Link>
+                                <Link>Contact</Link>
                             </div>
 
                         </div>
